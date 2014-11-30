@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- This page is used to describe the project that I will be working on for the web development course. 
+Requirements:
+1.  Describes the Preliminary design of my game.  see http://universe.tc.uvu.edu/cs2550/project/swDesign.html as an example
+
+-->
+<html>
+<head>
+    <title>Preliminary Project Design</title>
+</head>
+
+<body>
+<div title = "design">
+<h1>Project Design </h1>
+<p>
+This page is dedicated to laying out the preliminary design of the project.
+This is not intended to be a final design but an initial idea on how the game will be laid out and played.
+
+
+<h3><u>Constants:</u> (in JavaScript these are just unchanging variables)</h3>
+
+<strong>BEGINNER_SIZE:</strong>  The size of the grid for a beginner game. <br>
+<strong>INTERMEDIATE_SIZE:</strong>  The size of the grid for an intermediate game.<br>
+<strong>ADVANCED_SIZE:</strong> The size of an advanced game.<br>
+<strong>BEGINNER_BOMB_COUNT:</strong> The maximum number of bombs for a beginner game.<br>
+<strong>INTERMEDIATE_BOMB_COUNT:</strong> The maximum number of bombs for a intermediate game.<br>
+<strong>ADVANCED_BOMB_COUNT:</strong> The maximum number of bombs for a advanced game.<br>
+
+<h3><u>Objects:</u></h3>
+
+<strong>Square</strong> 
+<br>A square will have a <strong>_bomb,</strong>  <strong>_adjacentBombs</strong>  and a <strong>_flaged</strong> property.<br>
+
+<ul>
+<li> <strong>_bomb</strong>: boolean property to determine if it holds a or not.  </li>
+<li> <strong>_adjacentBombs</strong>: if there is not a bomb  it will hold the number of adjacent bombs</li>
+<li> <strong>_flagged</strong>: tells if the sqare has been marked by a flag </li>
+</ul>
+
+<br> Square object example: <br>
+{"_bomb": true, "_adjacentBombs" : null, "flagged": true}<br>
+{"_bomb": false, "_adjacentBombs" : 2, "flagged": false}<br>
+{"_bomb": false, "_adjacentBombs" : 0, "flagged": false}<br>
+<br>
+<hr>
+<strong>Game</strong>
+<br> A Game will have a _bombCount property. <br>
+
+<ul>
+<li> <strong> _bombCount </strong>: This will count the number of bombs flagged. <br>
+
+</ul>
+
+<br> Game object example: <br>
+{"_bombCount" :  20} <br>
+
+<br>
+<hr>
+<strong>Difficulty</strong>
+The Difficulty object will have <strong> _beginner, _intermdiate_,</strong> and <strong>_advanced </strong> properties.
+
+<ul>
+<li><strong>_beginner</strong>: a boolean value that will be used when calling the difficulty function
+when the game is being set up.</li>
+<li><strong>_intermdiate_</strong>: a boolean value that will be used when calling the difficulty function
+when the game is being set up.</li>
+<li><strong>_advanced</strong>: a boolean value that will be used when calling the difficulty function
+when the game is being set up.</li>
+</ul>
+
+
+<br>
+<hr>
+<strong>Clock</strong>
+
+<br>
+
+
+<h3><u>Functions:</u></h3>
+
+<I>Random(_size)</I>: this function will be to set up the status of each square in the game. 
+It will take a size variable and randomly set the squares that will get bombs
+<br>
+<br>
+<I>ClockCount()</I>: this function will be a counter that tells how much time it has taken to complete the game.
+<br><br>
+<I>BombCount(_bombCount)</I>: this function will show how many bombs have not been flagged.
+<br><br>
+<I>CountAdjacent()</I>: This function will see how many bombs are in the adjacent squares.
+<br><br>
+
+<h3><u>Notes:</u></h3>
+<ol>
+<li>This is a preliminary design and does not list all of the variables that will be used.  </li>
+<li>There will also be other objects added or removed at a later time </li>
+<li>There will be more functions added later </li>
+<li>This does not explain any of the graphical or visual layouts </li>
+</ol>
+
+</p>
+
+
+
+</div>
+</body>
+
+</html>
